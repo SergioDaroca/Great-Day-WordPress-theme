@@ -3,7 +3,7 @@ Great Day is a child theme for the fantastic Hitchcock WordPress theme from Ande
 
 http://www.andersnoren.se/teman/hitchcock-wordpress-theme/
 
-It's also the title of the first -and lost- short movie of Alfred Hitchcok.
+**The Great Day** is a 1920 British short drama film directed by Hugh Ford. Alfred Hitchcock is credited as a title designer. The film is now considered to be a lost film. https://en.wikipedia.org/wiki/The_Great_Day
 
 I created this for my friend Daniel cuberta's website at http://danielcuberta.com.
 
