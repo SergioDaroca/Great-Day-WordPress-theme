@@ -1,0 +1,136 @@
+/* 
+Theme Name: Great Day
+Theme URI: http://www.danielcuberta.com
+Description: Hitchcock Child Theme for danielcuberta.com >> http://www.andersnoren.se/teman/hitchcock-wordpress-theme/
+Template: hitchcock
+Version: 1.0.0
+Author: Sergio Daroca Fernández
+Author URI: http://flashdance.es/sergiodaroca
+License: GNU General Public License
+License URI: license.txt
+
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+
+/* FONTS
+-------------------------------------------------------------- */
+@font-face {
+	font-family: 'ColaborateLightRegular';
+	src: url('fonts/colablig.woff2') format('woff2'),
+	url('fonts/colablig.woff') format('woff'),
+	url('fonts/colablig.ttf') format('truetype'),
+	url('fonts/colablig.svg#colaboratelightregular') format('svg');
+	font-weight: normal;font-style: normal;
+}
+@font-face {
+	font-family: 'ostrich_sans_roundedmedium';
+	src: url('fonts/ostrichsansrounded-medium.woff2') format('woff2'),
+	url('fonts/ostrichsansrounded-medium.woff') format('woff'),
+	url('fonts/ostrichsansrounded-medium.ttf') format('truetype'),
+	url('fonts/ostrichsansrounded-medium.svg#ostrich_sans_roundedmedium') format('svg');
+	font-weight: normal;font-style: normal;
+}
+@font-face {
+	font-family: 'ostrich_sans_medium';
+	src: url('fonts/ostrichsans-medium.woff2') format('woff2'),
+	url('fonts/ostrichsans-medium.woff') format('woff'),
+	url('fonts/ostrichsans-medium.ttf') format('truetype'),
+	url('fonts/ostrichsans-medium.svg#ostrich_sans_roundedmedium') format('svg');
+	font-weight: normal;font-style: normal;
+}
+@font-face {
+	font-family: 'ostrich_sansheavy';
+	src: url('fonts/ostrichsans-heavy.woff2') format('woff2'),
+	url('fonts/ostrichsans-heavy.woff') format('woff'),
+	url('fonts/ostrichsans-heavy.ttf') format('truetype'),
+	url('fonts/ostrichsans-heavy.svg#ostrich_sansheavy') format('svg');
+	font-weight: normal;font-style: normal;
+}
+@font-face {
+	font-family: 'ostrich_sansbold';
+	src: url('fonts/ostrichsans-bold.woff2') format('woff2'),
+	url('fonts/ostrichsans-bold.woff') format('woff'),
+	url('fonts/ostrichsans-bold.ttf') format('truetype'),
+	url('fonts/ostrichsans-bold.svg#ostrich_sansbold') format('svg');
+	font-weight: normal;font-style: normal;
+}
+
+/* TYPOGRAPHY
+-------------------------------------------------------------- */
+html,body{font-family:"ColaborateLightRegular",Helvetica,Verdana,sans-serif;}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6,h1,h2,h3,h4,h5,h6 {text-transform:none;font-family:"ostrich_sans_medium",Helvetica,Verdana,sans-serif;}
+h1,h2,h3,h4,h5,h6 {text-transform:uppercase;}
+h2{letter-spacing: 2px;}
+.main-menu a, .credits p, .blog-title {text-transform: none;}
+.blog-title a{font-size: 1.3em;font-family: 'ostrich_sans_medium',Helvetica,Verdana,sans-serif;}
+a:hover,.post-content a:hover {text-decoration: none;}
+.post-content {font-size:1em;font-family:"ColaborateLightRegular",Helvetica,Verdana,sans-serif;color: rgba(255,255,255,1);}
+
+/* COLORS
+-------------------------------------------------------------- */
+html{background:black;}
+body{background:transparent;color:rgba(255,255,255,1);}
+body a{color:white;}
+body a:hover {color: rgb(101, 166, 194);}
+.post-container, .comments-container {background: rgba(0,0,0,.2);}
+a.post:hover .post-overlay { opacity: .8; }
+a.post:hover .archive-post-title {color: rgb(101, 166, 194);}
+.post-content a{color:inherit;}
+.mobile-navigation{background:rgba(22,22,22,1);}
+
+/* LAYOUT
+-------------------------------------------------------------- */
+body.admin-bar .header.section-inner, body.admin-bar .navigation {top: 32px;}
+.header.section-inner {width:auto;position:fixed;top: 0;text-align:left;padding: 3px 0 3px 0;margin: 2px 6px 2px 6px;z-index:30;}
+.header-image{position:fixed;top:0;}
+.header-image::after {background: rgba(0, 0, 0, 0) repeat scroll 0 0;}
+.blog-description {display:none;}
+.main-menu {text-align: right;}
+.main-menu a {padding: 12px 0;}
+.navigation {background: rgba(0,0,0,1);position: fixed;width: 100%;z-index:20;}
+.navigation>.section-inner {width:100%;max-width:100%;padding-right:1em;}
+.navigation {top: 0;}
+@media ( max-width: 900px ) {
+    .main-menu { display: none; }
+	.nav-toggle .bars {margin-left: auto;margin-right: 10px;display:block;}
+}
+/* POSTS & POSTS LIST
+-------------------------------------------------------------- */
+.post-header {margin: 0 auto;padding: 1em 0;width:100%;display:none;}
+.post-title {text-transform: none;font-size: 1.5em;}
+.post-navigation>a,.post-container,.post-overlay{background:transparent;}
+.post-inner {max-width: auto;width: auto;}
+.content{margin-top:180px;padding-left:6px;padding-right:6px}
+.comments-container {border-top: 1px solid #ddd;margin-top: 20px;}
+.format-video .attachment-post-image{display:none;}
+.post-meta{display:none;}
+.posts .post{background:center/contain no-repeat;}
+.has-post-thumbnail .post-overlay {background: rgba(0, 0, 0, 1) none repeat scroll 0 0;}
+.archive-post-title {color: rgba(255,255,255,.9);text-transform:none;}
+
+.post-content .query-content p{font-size:1em;}
+.post-content .query-content h2{ margin:0;}
+.post-content .query-content{font-size:1em;}
+.query-content .archive-post-title{font-size:1.375em;}
+.query-content p.archive-post-date {font-size:0.875em;margin-bottom: 5px;}
+.archive-post-header, .has-post-thumbnail:hover .archive-post-header{top:40%;}
+.credits{text-align:center;}
+
+.posts {margin-top:initial;}
+.archive-post-date{display:none;}
+.posts .post + .post {margin-left: 0;}
+.archive-post-header,.post-overlay {position: static;top:initial;right:initial;bottom:initial;left:initial;}
+.posts .post {display:inline-block;position: static;float: none;width: auto;min-height:0;padding: 4px 6px;
+margin-top:6px;margin-right:12px;background-size: auto;background-position:initial;border: 1px rgba(255,255,255,.4) solid;}
+.posts .post:hover {border: 1px rgba(101, 166, 194,.3) solid;color: white;}
+@media (max-width: 400px){.posts .post {min-height: auto;}}
+@media (max-width: 600px){.posts .post {min-height:auto;}}
+
+/* BLACK ON WHITE FOR TEXT SECTIONS
+-------------------------------------------------------------- */
+html.parent-pageid-20 {background:white;color:rgba(22,22,22,.8);}
+body.parent-pageid-20 .post-content,body.parent-pageid-20 .credits{color:rgba(22,22,22,.8);}
+body.parent-pageid-20  a{color:black;}
+body.parent-pageid-20 .main-menu a, body.parent-pageid-20 .mobile-menu a , body.parent-pageid-20 .header a{color: white;}
